@@ -13,15 +13,17 @@ body {
     margin: 0 auto;
 }
 
-.header {
-    background: url("../images/bg-header.jpg") center no-repeat;
-    height: 300px;
+.header-menu {
+    background: url("/images/bg-header.jpg") center no-repeat;
     
 }
 
 .container {
-    max-width: 1110px;
+    position: relative;
+    max-width: 1142px;
     margin: 0 auto;
+    
+    padding: 0px 16px;
 }
 
 .contacts {
@@ -49,10 +51,14 @@ body {
 }
 
 .nav_menu {
-    margin-top: 37px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    padding: 38px 18px;
+    padding: 30px 18px;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 77px;
+    left: 0px;
 }
 
 .nav_links {
@@ -62,10 +68,22 @@ body {
 }
 
 .nav_link {
+    position: relative;
     font-weight: 600;
     font-size: 13px;
     text-align: center;
     color: #8B8B8B;
+}
+.nav_link.nav-arrow::after {
+    content: '';
+    width: 10px;
+    height: 8px;
+    position: absolute;
+    right: -12px;
+    top: calc(50% - 3px);
+    background: url("/images/icons/ico-arrowdown.svg") center no-repeat;
+    cursor: pointer;
+    
 }
 
 .header-link {
@@ -77,4 +95,148 @@ body {
 .net-color {
     color: #4CAF50;
 }
+
+/*Header block*/
+
+.header {
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 140px;
+}
+.header-content {
+}
+.header-title {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 25px;    
+}
+.header-desc {
+    font-size: 20px;
+    color: #8B8B8B;
+    margin-bottom: 25px;   
+}
+.color-header-desc {
+    color: #00ACB1;
+}
+.header-btn {
+    display: inline-block;
+    padding: 18px 24px;
+    color: #fff;
+    background: #4CAF50;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+.btn-link{
+
+}
+.header-img {
+}
+
+/*direction block*/
+
+.main-direction {
+    background: url("/images/bg-direction.jpg");
+}
+.direction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 49px 95px 57px 95px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    transform:translateY(-80px);
+}
+.direction-title {
+    font-weight: 800;
+    font-size: 45px;
+    text-align: center; 
+    padding-bottom: 42px;       
+}
+.direction-subtitle { 
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+}
+.dir-titles {    
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 20px; 
+}
+.dir-desc {
+    font-weight: 300;
+    font-size: 16px;
+    color: #8B8B8B;
+    text-align: center;
+}
+.alco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding-right: 78px
+}
+.icon-alco {
+}
+.alco-title {
+}
+.alco-desc {
+}
+.narco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 78px;
+}
+.icon-narco {
+}
+.narco-title {
+}
+.narco-desc {
+}
+.psyho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.icon-psyho {
+}
+.psyho-title {
+}
+.psyho-desc {
+}
+.main-stat {
+}
+.stat-patient {
+}
+.icon-patient {
+}
+.patient-title {
+}
+.patient-desc {
+}
+.stat-dropper {
+}
+.icon-dropper {
+}
+.dropper-title {
+}
+.dropper-desc {
+}
+.stat-review {
+}
+.icon-review {
+}
+.review-title {
+}
+.review-desc {
+}
+
+
 
