@@ -2,7 +2,10 @@
 
 body {
     font-family: 'Urbanist', sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 16px;
+    color: #434343;
 }
 
 .wrapper_all {
@@ -12,17 +15,66 @@ body {
 
 .header {
     background: url("../images/bg-header.jpg") center no-repeat;
+    height: 300px;
+    
 }
 
 .container {
-    margin: 0 auto;
     max-width: 1110px;
-    height: 100vh;
+    margin: 0 auto;
 }
 
-.nav_contacts {
+.contacts {
+    padding-top: 20px;
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-network a {
+    padding-right: 20px;
+}
+
+.social-network a:last-child {
+    padding-right: 0px;
+}
+
+.contacts_address {
+    padding-left: 277px;
+}
+
+.contacts_tel {
+    padding-left: 32px;
+}
+
+.nav_menu {
+    margin-top: 37px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 38px 18px;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link {
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+    color: #8B8B8B;
+}
+
+.header-link {
+    font-weight: 800;
+    font-size: 28px;
+    color: #434343;
+}
+
+.net-color {
+    color: #4CAF50;
 }
 
