@@ -14,7 +14,7 @@ body {
 }
 
 .header-menu {
-    background: url("/images/bg-header.jpg") center no-repeat;
+    background: url("../images/bg-header.jpg") center no-repeat;
     
 }
 
@@ -81,7 +81,7 @@ body {
     position: absolute;
     right: -12px;
     top: calc(50% - 3px);
-    background: url("/images/icons/ico-arrowdown.svg") center no-repeat;
+    background: url("../images/icons/ico-arrowdown.svg") center no-repeat;
     cursor: pointer;
     
 }
@@ -139,7 +139,7 @@ body {
 /*direction block*/
 
 .main-direction {
-    background: url("/images/bg-direction.jpg");
+    background: url("../images/bg-direction.jpg");
 }
 .direction {
     display: flex;
