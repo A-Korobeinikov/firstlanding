@@ -6,23 +6,20 @@ body {
     font-weight: normal;
     font-size: 16px;
     color: #434343;
-}
-
-.wrapper_all {
     max-width: 1920px;
     margin: 0 auto;
 }
 
 .header-menu {
     background: url("../images/bg-header.jpg") center no-repeat;
-    
+
 }
 
 .container {
     position: relative;
     max-width: 1142px;
     margin: 0 auto;
-    
+
     padding: 0px 16px;
 }
 
@@ -34,20 +31,43 @@ body {
     align-items: center;
 }
 
-.social-network a {
+.social {
     padding-right: 20px;
 }
 
-.social-network a:last-child {
+.social:last-child {
     padding-right: 0px;
 }
 
-.contacts_address {
-    padding-left: 277px;
+.contact {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
-.contacts_tel {
+.contact-address {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.map-address {
+    padding-left: 13px;
+}
+
+.contact-tell {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
     padding-left: 32px;
+}
+
+.phone {
+    padding-left: 13px;
+}
+
+.mobile-menu {
+    display: none;
 }
 
 .nav_menu {
@@ -74,6 +94,7 @@ body {
     text-align: center;
     color: #8B8B8B;
 }
+
 .nav_link.nav-arrow::after {
     content: '';
     width: 10px;
@@ -83,7 +104,7 @@ body {
     top: calc(50% - 3px);
     background: url("../images/icons/ico-arrowdown.svg") center no-repeat;
     cursor: pointer;
-    
+
 }
 
 .header-link {
@@ -105,21 +126,25 @@ body {
     align-items: center;
     padding-bottom: 140px;
 }
-.header-content {
-}
+
+.header-content {}
+
 .header-title {
     font-weight: 700;
     font-size: 50px;
-    margin-bottom: 25px;    
+    margin-bottom: 25px;
 }
+
 .header-desc {
     font-size: 20px;
     color: #8B8B8B;
-    margin-bottom: 25px;   
+    margin-bottom: 25px;
 }
+
 .color-header-desc {
     color: #00ACB1;
 }
+
 .header-btn {
     display: inline-block;
     padding: 18px 24px;
@@ -130,17 +155,13 @@ body {
     font-size: 18px;
     text-align: center;
 }
-.btn-link{
-
-}
-.header-img {
-}
 
 /*direction block*/
 
 .main-direction {
     background: url("../images/bg-direction.jpg");
 }
+
 .direction {
     display: flex;
     flex-direction: column;
@@ -150,93 +171,108 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    transform:translateY(-80px);
+    transform: translateY(-80px);
 }
+
 .direction-title {
     font-weight: 800;
     font-size: 45px;
-    text-align: center; 
-    padding-bottom: 42px;       
+    text-align: center;
+    padding-bottom: 42px;
 }
-.direction-subtitle { 
+
+.direction-subtitle {
     display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
 }
-.dir-titles {    
+
+.main-addiction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.addiction-title {
     font-weight: 600;
     font-size: 18px;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
+    text-align: center;
 }
-.dir-desc {
+
+.addiction-desc {
     font-weight: 300;
     font-size: 16px;
     color: #8B8B8B;
     text-align: center;
+    line-height: 1.5;
+    padding: 0 24px;
 }
-.alco {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    padding-right: 78px
-}
-.icon-alco {
-}
-.alco-title {
-}
-.alco-desc {
-}
-.narco {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right: 78px;
-}
-.icon-narco {
-}
-.narco-title {
-}
-.narco-desc {
-}
-.psyho {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-}
-.icon-psyho {
-}
-.psyho-title {
-}
-.psyho-desc {
-}
 .main-stat {
-}
-.stat-patient {
-}
-.icon-patient {
-}
-.patient-title {
-}
-.patient-desc {
-}
-.stat-dropper {
-}
-.icon-dropper {
-}
-.dropper-title {
-}
-.dropper-desc {
-}
-.stat-review {
-}
-.icon-review {
-}
-.review-title {
-}
-.review-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 80px;
 }
 
+.stat-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
 
+.stat-icon {
+    padding: 0 0 10px 0;
+}
 
+.stat-title {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 0 10px 0;
+}
+
+.stat-desc {
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 0 70px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact {
+        flex-flow: column nowrap;
+    }
+
+    .contact-tell {
+        padding: 12px 0;
+    }
+
+    .nav_menu {
+        display: none;
+    }
+
+    .header {
+        margin-top: 120px 0;
+    }
+
+    .header-title {
+        font-size: 35px;
+    }
+
+    .direction {
+        padding: 43px 49px 43px 49px;
+    }
+
+    .direction-title {
+        font-size: 30px;
+        padding-bottom: 32px;
+    }
+}
